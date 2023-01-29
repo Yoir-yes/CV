@@ -47,11 +47,6 @@ p{
     font-size: 11px;
     color: white;
 }
-p>a{
-    text-decoration: none;
-    color: #ff4545;
-    font-weight: bold;
-}
 .tak{
     float: right;
 }
@@ -189,6 +184,15 @@ p>a{
 }
 .inside{
     color: #ccf28b;
+}
+.inside>a{
+    text-decoration: none;
+    font-weight: 100;
+    color: #ccf28b;
+}
+.inside>a:hover{
+    color: #ccf28b;
+    border: 1px dashed #ccf28b;
 }
 #inter{
     color: white;
