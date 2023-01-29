@@ -1,0 +1,223 @@
+body {
+    background: url(https://cdn.arstechnica.net/wp-content/uploads/2016/10/sierra.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    max-width: 800px;
+    margin: 15px auto 15px auto;
+    opacity: 0.9;
+}
+.baner{
+    background: #CEF3DD;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px 15px 0 0;
+    padding-right: 10px;
+    padding-left: 14px;
+
+}
+h4{
+    display: inline-block;
+    color: darkslategrey;
+}
+@keyframes zmiana {
+    50%{background-color: #44d067;}
+    100%{background-color: #263238;}
+}
+.lewy>img{
+    border-radius: 100px;
+    padding: 5px;
+    height: 145px;
+    width: 145px;
+    animation: zmiana 20s infinite;
+    opacity:1;
+}
+p{
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
+p>a{
+    text-decoration: none;
+    color: #ff4545;
+    font-weight: bold;
+}
+.tak{
+    float: right;
+}
+@keyframes miganie {
+    100%{ color: #1B2225;}
+}
+.miga{
+    font-size: large;
+    font-weight: 300;
+    color: white;
+    animation: miganie 1s infinite;
+}
+.com>a{
+    text-decoration: none;
+    color: #6a737d;
+}
+.info>a{
+    color: #79b8ff;
+}
+.green{
+    background: #03d544;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.yellow{
+    background: #ffbe03;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.red{
+    background: #ff4545;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.art{
+    display: flex;
+    overflow: auto;
+    max-height: 500px;
+}
+.lewy{
+    width: 150px;
+    background: #263238;
+    color: #cdd3de;
+    border-right:1px solid white;
+}
+.numer{
+    display: block; 
+    background-color: #263238;
+    padding-right: 5px;
+}
+.info{
+    margin: 3px 10px;
+    text-align: left;
+    display: block;
+}
+.prawy{
+    background: #1B2225;
+    color: #cdd3de;
+    display: flex;
+    width: calc(100% - 150px);
+    overflow-y: scroll;
+}
+.prawy::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #263238;
+}
+.prawy::-webkit-scrollbar{
+    width: 12px;
+	background-color: #263238;
+}
+.prawy::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #1B2225;
+}
+.prawy>div{
+    padding: auto;
+}
+.prawyx2{
+    width: calc(100% - 30px);
+    padding-left: 5px;
+}
+.prawy_lewy{
+    text-align: right;
+    width: 30px;
+}
+.rod{
+    font-size: 13px;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
+.stopa{
+    background: #CEF3DD;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0 0 15px 15px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.certy{
+    background: #03cad5;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.prawyx2>span{
+    display: block;
+}
+.com{
+    color: #6a737d;
+}
+.podklas{
+    color: #eeb657;
+}
+.klamra{
+    color: #79b8ff;
+    font-weight: bold;
+}
+.inside{
+    color: #ccf28b;
+}
+#inter{
+    color: white;
+    font-weight: bold;
+}
+.tre::first-letter{
+    font-weight: 900;
+}
+.moreinside{
+    color: #79b8ff;
+    font-weight: 100;
+}
+.mybi{
+    padding-left: 50px;
+    font-weight: bold;
+    color: aqua;
+}
+@media screen and (max-width:500px){
+    .art{
+        display: inline;
+    }
+    .lewy{
+        visibility:collapse;
+    }
+    .prawy{
+        width: 100%;
+        margin-top: -500px;
+    }
+    body{
+        background-size:auto;
+    }
+}
